@@ -1,0 +1,32 @@
+@import "../src/assets/styles/variables.scss";
+
+/******************** import components ******************************/
+@import "./components/navbar/Navbar.scss";
+@import "./components/footer/Footer.scss";
+@import "./components/containerCard/ContainerCard.scss";
+@import "./components/headerRecipe/HeaderRecipe.scss";
+@import "./components/titleRecipe/TitleRecipe.scss";
+@import "./components/usefulInformation/UsefulInformation.scss";
+@import "./components/description/Description.scss";
+
+/******************** import pages ***********************************/
+@import "./pages/recipe/Recipe.scss";
+@import "./pages/home/Home.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  height: calc(100vh - 115px);
+  background-color: rgba(244, 186, 198, 0.2);
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $app-primary-font;
+}

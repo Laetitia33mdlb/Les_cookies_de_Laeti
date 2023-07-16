@@ -1,0 +1,12 @@
+.footer {
+  background-color: $app-primary-color;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  .symbolModification {
+    height: 1rem;
+  }
+}

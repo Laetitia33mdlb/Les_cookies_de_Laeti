@@ -1,0 +1,15 @@
+.navbar {
+  height: 75px;
+  width: 100%;
+  background-color: $app-primary-color;
+  display: flex;
+  .logo {
+    height: 3.5rem;
+    border-radius: 50%;
+    margin: 0.5rem 0 0 1rem;
+  }
+  .titleNavbar {
+    color: $app-secondary-color;
+    margin: auto;    
+  }
+}
