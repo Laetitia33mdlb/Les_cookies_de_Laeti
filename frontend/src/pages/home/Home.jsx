@@ -16,6 +16,7 @@ function Home() {
       });
   }, []);
   console.log(recipes);
+  
   return (
     <div className="containerRecipes">
       {recipes.map((recipe) => (
