@@ -15,7 +15,6 @@ function Home() {
         console.error(error);
       });
   }, []);
-  console.log(recipes);
   
   return (
     <div className="containerRecipes">
