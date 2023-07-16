@@ -1,0 +1,23 @@
+.PinkLine {
+  width: 87%;
+  margin: auto;
+  margin-top: 1rem;
+  border-top: 2px solid $app-primary-color;
+}
+.informations {
+  display: flex;
+  margin-top: 1rem;
+
+  .clock,
+  .hat,
+  .fork {
+    display: flex;
+    height: 1.3rem;
+    margin: auto;
+  }
+  h3 {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+}
