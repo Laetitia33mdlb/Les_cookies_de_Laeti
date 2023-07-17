@@ -8,7 +8,7 @@ import UsefulInformation from "../../components/usefulInformation/UsefulInformat
 
 function Recipe() {
   const [data, setData] = useState([]);
-  const {id} = useParams();
+  const { id } = useParams();
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BASE_API}/recipes/${id}`)
