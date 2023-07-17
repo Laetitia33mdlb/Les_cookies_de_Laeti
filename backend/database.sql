@@ -8,8 +8,9 @@ CREATE TABLE `recipe` (
 );
 
 INSERT INTO `recipe` (`id`, `name`, `cooking_time`, `number_of_persons`, `difficulty`, `picture`) VALUES
-(1, "Cookies pépites de chocolat", 30, 6, "facile", "C:\Users\MICHET DE LA BAUME\Documents\formation Wild\Checkpoint4\checkpoint_4\frontend\src\assets\pictures\cookies_chocolat.jfif"),
-(2, "Cookies à la mélasse", 45, 6, "moyen", "../frontend/src/assets/pictures/cookies_melasse.jpg");
+(1, "Cookies pépites de chocolat", 30, 6, "facile", "https://www.papillesetpupilles.fr/wp-content/uploads/2005/07/Cookies-aux-pe%CC%81pites-de-chocolat-%C2%A9beats1.-shutterstock.jpg"),
+(2, "Cookies à la mélasse", 45, 6, "moyen", "https://melassegrandma.com/wp-content/uploads/2016/05/Bakery-style-molasses-cookies-2sm-2.jpg"),
+(3, "Cookies aux fruits", 50, 6, "moyen", "https://img.passeportsante.net/1200x675/2020-12-17/i98176-cookies-aux-fruits-rouges-sans-beurre.webp");
 
 
 
@@ -31,7 +32,8 @@ INSERT INTO `ingredients` (`id`, `name`) VALUES
 (10, 'pépites de chocolat'),
 (11, 'mélasse'),
 (12, 'cannelle'),
-(13, 'noix de muscade');
+(13, 'noix de muscade'),
+(14, 'confiture de fruits');
 
 
 CREATE TABLE `recipes-ingredients` (
@@ -65,7 +67,16 @@ INSERT INTO `recipes-ingredients` (`id`, `quantity`, `id_recipes`, `id_ingredien
 (16, 5, 2, 5),
 (17,15, 2, 12),
 (18, 5, 2, 13),
-(19, 1000, 2, 8);
+(19, 1000, 2, 8),
+(20, 2, 3, 1),
+(21, 500, 3, 2),
+(22, 125, 3, 14),
+(23, 2, 3, 7),
+(24, 2, 3, 4),
+(25, 5, 3, 5),
+(26, 1000, 3, 8),
+(27, 75, 3, 2);
+
 
 
 
@@ -86,7 +97,12 @@ INSERT INTO `steps` (`id`, `rank`, `description`, `id_recipes`) VALUES
 (3, 3, "Cuire à 190° durant huit à dix minutes. Laisser refroidir sur la plaque pendant deux minutes puis transférer les cookies sur une grille jusqu\'à complet refroidissement. (La grille est un accessoire essentiel si l\'on veut des cookies bien croustillants.", 1),
 (4, 4, "Rendement : six à huit douzaines, en fonction de la taille des cookies. Note : Si les cookies ont tendance à s\'étaler sur la plaque, ne pas les écraser avant la cuisson et réduire la température à 175°.", 1),
 (5, 1, "Faire fondre le beurre dans un grand bol allant au micro-ondes. Ajouter le sucre et la mélasse. Mélanger, laisser reposer quelques minutes puis incorporer les oeufs battus, le bicarbonate de soude, le sel, la cannelle et la noix de muscade en remuant après chaque ajout. Verseer doucement la farine sans cesser de remuer. On doit obtenir une pâte sèche et friable.", 2),
-(6, 2, "Couvrir et mettre au frigo pendant 2 heures au moin. (Toute la nuit c'est bien aussi). Préchauffer le four à 175°C, la grille en position médiane.", 3),
-(7, 3, "Confectionner des boules de pâte de la taille d'une noix. Les rouler dans un bol de sucre blanc puis les disposer sur une plaque enduite de matière grasse (12 pour une plaque standard). Les écraser légèrement au moyen d'une spatule pour éviter qu'elles ne roulent quand vous les porterez dans le four.", 4),
-(8, 4, "Cuire pendant 10 à 12 minutes. Les cookies s'aplatiront d'eux mêmes. Laissez-les pendant 2 minutes sur la plaque avant de les transférer sur une grille où ils finiront de refroidir", 5),
-(9, 5, "Les cookies à la mélasse se conservent bien au congélateur. Enveloppez-les d'une feuille d'aluminium que vous glisserez dans un sac à congélation. Vous pourrez les garder jusqu'à 3 mois.", 6);
+(6, 2, "Couvrir et mettre au frigo pendant 2 heures au moin. (Toute la nuit c'est bien aussi). Préchauffer le four à 175°C, la grille en position médiane.", 2),
+(7, 3, "Confectionner des boules de pâte de la taille d'une noix. Les rouler dans un bol de sucre blanc puis les disposer sur une plaque enduite de matière grasse (12 pour une plaque standard). Les écraser légèrement au moyen d'une spatule pour éviter qu'elles ne roulent quand vous les porterez dans le four.", 2),
+(8, 4, "Cuire pendant 10 à 12 minutes. Les cookies s'aplatiront d'eux mêmes. Laissez-les pendant 2 minutes sur la plaque avant de les transférer sur une grille où ils finiront de refroidir", 2),
+(9, 5, "Les cookies à la mélasse se conservent bien au congélateur. Enveloppez-les d'une feuille d'aluminium que vous glisserez dans un sac à congélation. Vous pourrez les garder jusqu'à 3 mois.", 2);
+(10, 1, "Faire fondre le beurre dans un grand bol allant au micro-ondes. Ajoutez le sucre blanc et mélangez soigneusement. Laissez reposer pendant que vous passez à l'étape suivante", 3),
+(11, 2, "Faites fondre la confiture au four micro-ondes ou dans une casserole à feu doux jusqu'à obtenir un genre de sirop que vous verserez dans le bol contenant le beurre et le sucre. Ajoutez les oeufs battus, le bicarbonate de soude et le sel en remuant à chaque nouvel ingrédient", 3),
+(12, 3, "Ajoutez la farine. Mélangez soigneusement. Couvrez le bol et laissez-le au frigo pendan au moins deux heures. Préchauffez le four à 175°, la grille en position médiane. Sortir la pâte du frigo", 3),
+(13, 3, "Confectionner des boulettes de pâte de la taille d'une noix. Verser dans un bol le sucre blanc que vous avez réservé, y rouler vos boulettes de pâte puis les déposer sur une plaque à pâtisserie préalablement enduite de matière grasse.2crasez-les délicatement au moyen d'une spatule graissée. Avec le pouce imprimer un creux au centre de chaque cookie et remplir ce creux avec un peu de confiture.", 3),
+(14, 3, "Cuire pendant dix à douze minutes sur laplaque puis les transférer sur une grille.", 3);

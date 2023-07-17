@@ -1,13 +1,12 @@
 .containerCard {
   border: 1px solid $app-primary-color;
   border-radius: 5px;
-  width: 8rem;
+  width: 9rem;
   height: 11rem;
   display: flex;
   flex-direction: column;
   background-color: $app-third-color;
   margin: 9%;
-
 
   .imagecard {
     height: 45%;
@@ -18,10 +17,8 @@
     margin: 0 auto;
     font-size: 20px;
   }
-  .rating a {
-    float: initial;
+  .rating span {
     color: $app-primary-color;
-    text-decoration: none;
     margin-left: 1%;
   }
   .titleCard {

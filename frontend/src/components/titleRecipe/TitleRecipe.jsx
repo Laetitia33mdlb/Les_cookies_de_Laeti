@@ -1,7 +1,9 @@
-function TitleRecipe() {
+import PropTypes from "prop-types";
+
+function TitleRecipe({ name }) {
   return (
     <div className="containerTitleRecipe">
-      <h1 className="titleTitleRecipe">Cookies pépites de chocolat</h1>
+      <h1 className="titleTitleRecipe">{name}</h1>
       <div className="rating">
         <a href="#5" title="Give 5 stars">
           ★
@@ -22,4 +24,8 @@ function TitleRecipe() {
     </div>
   );
 }
+TitleRecipe.propTypes = {
+  name: PropTypes.string.isRequired,
+  // id: PropTypes.number.isRequired,
+};
 export default TitleRecipe;
