@@ -21,8 +21,14 @@ const router = createBrowserRouter([
         path: "/Recipe/:id",
         element: <Recipe />,
       },
-      { path: "/create", element: <CreateCookies /> },
-      { path: "/modification", element: <ModificationCookies />},
+      {
+        path: "/create", 
+        element: <CreateCookies />,
+      },
+      {
+        path: "/modification", 
+        element: <ModificationCookies />,
+      },
     ],
   },
 ]);
