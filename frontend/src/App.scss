@@ -21,10 +21,21 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+header,
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
 main {
-  height: calc(100vh - 115px);
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   background-color: rgba(244, 186, 198, 0.2);
-  position: relative;
 }
 
 h1,

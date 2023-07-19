@@ -6,9 +6,9 @@ const RecipeControllers = require("./controllers/RecipeControllers");
 
 router.get("/recipes", RecipeControllers.browse);
 router.get("/recipes/:id", RecipeControllers.read);
-// router.put("/items/:id", itemControllers.edit);
-// router.post("/items", itemControllers.add);
-// router.delete("/items/:id", itemControllers.destroy);
+router.post("/recipes", RecipeControllers.add);
+router.put("/recipes/:id", RecipeControllers.edit);
+router.delete("/recipes/:id", RecipeControllers.destroy);
 
 module.exports = router;
 

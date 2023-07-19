@@ -4,7 +4,7 @@ CREATE TABLE `recipe` (
   `cooking_time` int(11) DEFAULT NULL,
   `number_of_persons` int(11) DEFAULT NULL,
   `difficulty` varchar(255) NOT NULL,
-  `picture` varchar(255) DEFAULT NULL
+  `picture` varchar(255) DEFAULT NULL,
 );
 
 INSERT INTO `recipe` (`id`, `name`, `cooking_time`, `number_of_persons`, `difficulty`, `picture`) VALUES

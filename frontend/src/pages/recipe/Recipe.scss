@@ -1,4 +1,18 @@
 .mainRecipe {
   height: calc(100vh - 115px);
   background-color: white;
+  .buttonUpdateDelete {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 3rem;
+    .button {
+      background-color: $app-primary-color;
+      color: $app-secondary-color;
+      border: #fff solid 1px;
+      border-radius: 5px;
+      width: 6rem;
+      height: 2rem;
+      border: #e77189 solid 2px;
+    }
+  }
 }

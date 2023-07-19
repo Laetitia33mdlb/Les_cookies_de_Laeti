@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function ContainerCard({ name, picture, id }) {
   return (
-    <Link to={`/Recipe/${id}`}>
+    <Link to={`/recipes/${id}`}>
       <div className="containerCard">
         <img className="imagecard" src={picture} alt="Cookies chocolat" />
         <div className="rating">
