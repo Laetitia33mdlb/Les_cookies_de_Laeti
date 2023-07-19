@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Recipe from "./pages/recipe/Recipe";
 import "./App.scss";
+import CreateCookies from "./pages/create/CreateCookies";
+import ModificationCookies from "./pages/modification/ModificationCookies";
 import App from "./App";
 
 const router = createBrowserRouter([
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
         path: "/Recipe/:id",
         element: <Recipe />,
       },
+      { path: "/create", element: <CreateCookies /> },
+      { path: "/modification", element: <ModificationCookies />},
     ],
   },
 ]);
