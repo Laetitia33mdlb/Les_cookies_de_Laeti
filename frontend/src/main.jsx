@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/Recipe/:id",
+        path: "/recipes/:id",
         element: <Recipe />,
       },
       {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <CreateCookies />,
       },
       {
-        path: "/modification",
+        path: "/modification/:id",
         element: <ModificationCookies />,
       },
     ],

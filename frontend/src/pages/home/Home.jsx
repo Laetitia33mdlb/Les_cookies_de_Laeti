@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
 import { fetcher } from "../../services/api";
 import ContainerCard from "../../components/containerCard/ContainerCard";
 
@@ -15,6 +14,7 @@ function Home() {
         console.error(error);
       });
   }, []);
+
   return (
     <div className="containerRecipes">
       {recipes.map((recipe) => (
