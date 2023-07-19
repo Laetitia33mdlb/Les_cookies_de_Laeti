@@ -22,11 +22,11 @@ const router = createBrowserRouter([
         element: <Recipe />,
       },
       {
-        path: "/create", 
+        path: "/create",
         element: <CreateCookies />,
       },
       {
-        path: "/modification", 
+        path: "/modification",
         element: <ModificationCookies />,
       },
     ],
