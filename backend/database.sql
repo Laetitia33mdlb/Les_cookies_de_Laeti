@@ -8,8 +8,8 @@ CREATE TABLE `recipe` (
 );
 
 INSERT INTO `recipe` (`id`, `name`, `cooking_time`, `number_of_persons`, `difficulty`, `picture`) VALUES
-(1, "Cookies pépites de chocolat", 30, 6, "facile", "C:\Users\MICHET DE LA BAUME\Documents\formation Wild\Checkpoint4\checkpoint_4\frontend\src\assets\pictures\cookies_chocolat.jfif"),
-(2, "Cookies à la mélasse", 45, 6, "moyen", "../frontend/src/assets/pictures/cookies_melasse.jpg"),
+(1, "Cookies pépites de chocolat", 30, 6, "facile", "https://assets.afcdn.com/recipe/20190529/93153_w1024h576c1cx2220cy1728.jpg"),
+(2, "Cookies à la mélasse", 45, 6, "moyen", "https://melassegrandma.com/wp-content/uploads/2016/05/Bakery-style-molasses-cookies-2sm-2.jpg"),
 (3, "Cookies aux fruits", 50, 6, "moyen", "https://img.passeportsante.net/1200x675/2020-12-17/i98176-cookies-aux-fruits-rouges-sans-beurre.webp");
 
 

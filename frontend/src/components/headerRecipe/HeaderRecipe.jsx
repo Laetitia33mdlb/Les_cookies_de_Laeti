@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import Cookieschoco from "../../assets/pictures/cookies_chocolat.jfif";
+import PropTypes from "prop-types";
 import Rectangle from "../../assets/pictures/Rectangle.png";
 import BackArrow from "../../assets/pictures/back_arrow.png";
 
-function HeaderRecipe() {
+function HeaderRecipe({ picture }) {
   return (
     <div className="headerRecipe">
       <img
         className="headerCookiesChoco"
-        src={Cookieschoco}
+        src={picture}
         alt="cookies chocolat"
       />
-      <Link to="/">
+      <Link to={-1}>
         <div className="backArrowRecatngle">
           <img
             className="rectangle"
@@ -24,4 +24,7 @@ function HeaderRecipe() {
     </div>
   );
 }
+HeaderRecipe.propTypes = {
+  picture: PropTypes.string.isRequired,
+};
 export default HeaderRecipe;

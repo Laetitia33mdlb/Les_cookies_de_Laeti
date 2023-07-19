@@ -1,22 +1,21 @@
 .containerTitleRecipe {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-
-    .titleTitleRecipe {
-        font-size: 1.7rem;
+  .titleTitleRecipe {
+    font-size: 1.7rem;
     text-align: center;
     margin-top: 1rem;
+  }
+  .rating {
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+  .rating a {
+    float: initial;
+    color: $app-primary-color;
+    text-decoration: none;
+    margin-left: 1%;
+  }
 }
-    .rating {
-        margin: 0 auto;
-        font-size: 20px;
-        margin-top: 1rem;
-    }
-.rating a {
-            float: initial;
-            color: $app-primary-color;
-            text-decoration: none;
-            margin-left: 1%;
-        }
-    } 
