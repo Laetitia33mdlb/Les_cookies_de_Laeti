@@ -5,17 +5,51 @@
   .headerCookiesChoco {
     width: 100%;
     height: 10rem;
+    @include tablet {
+      width: 50%;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    @include desktop {
+      display: flex;
+      margin: auto;
+      width: 30%;
+      height: 13rem;
+      padding-top: 2rem;
+    }
+  }
+}
   }
   .rectangle {
     height: 2.3rem;
     width: 12%;
     position: absolute;
     margin: -9rem 0 0 1rem;
+    @include tablet {
+      height: 2.5rem;
+      width: 9%;
+      margin: -10.4rem 0 0 2rem;
+      @include desktop {
+        height: 3rem;
+        width: 5%;
+        margin: -11rem 0 1rem 7rem;
+      }
+    }
   }
   .backArrow {
     width: 10%;
     height: 2.4rem;
     position: absolute;
     margin: -9.3rem 0 0 1.3rem;
+    @include tablet {
+      width: 6%;
+      height: 2.2rem;
+      margin: -10.3rem 0 0 2.9rem;
+      @include desktop {
+        width: 4%;
+        height: 3.5rem;
+        position: absolute;
+        margin: -11.6rem 0 0 7.6rem;
+      }
   }
-}
+    }
+  

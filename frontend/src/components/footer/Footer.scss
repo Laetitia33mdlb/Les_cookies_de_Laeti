@@ -8,5 +8,8 @@
   bottom: 0;
   .symbolModification {
     height: 1rem;
+    @include desktop {
+      margin-left: 6rem;
+    }
   }
 }
