@@ -6,11 +6,17 @@
     font-size: 1.7rem;
     text-align: center;
     margin-top: 1rem;
+    @include desktop {
+      font-size: 3rem;
+    }
   }
   .rating {
     margin: 0 auto;
     font-size: 20px;
     margin-top: 1rem;
+    @include desktop {
+      font-size: 35px;
+    }
   }
   .rating a {
     float: initial;

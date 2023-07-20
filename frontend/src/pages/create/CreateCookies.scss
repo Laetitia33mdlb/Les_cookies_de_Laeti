@@ -4,9 +4,16 @@
     display: flex;
     padding-top: 1rem;
     margin-left: 1rem;
+    @include desktop {
+      font-size: 1.8rem;
+    }
   }
   .interiorInput {
     margin: 4%;
+    @include desktop {
+      margin: 1%;
+      font-size: 1.2rem;
+    }
   }
   .buttons {
     margin-left: 40%;
@@ -15,5 +22,12 @@
     border-radius: 5px;
     width: 20%;
     border: #e77189 solid 2px;
+    @include desktop {
+      margin-left: 48%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 8rem;
+    height: 3rem;
+    }
   }
 }
